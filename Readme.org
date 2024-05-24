@@ -34,7 +34,7 @@ can be used to create decision trees that calculate probabilities.
 * Customizable options
 Below is a list of customizable options:
 
- - `org-columns-leaf-types': Like `org-columns-summary-types' (which see), but for leaves of the tree only.
+ - *org-columns-leaf-types*: Like *org-columns-summary-types* (which see), but for leaves of the tree only.
 * Installation
 
 Put org-columns-jb-extras.el in a directory in your load-path, e.g. ~/.emacs.d/
