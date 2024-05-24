@@ -1,0 +1,48 @@
+* Library Information
+ /org-columns-jb-extras.el/ --- Extra functions & macros for working with org-columns
+
+ - Filename :: [[file:org-columns-jb-extras.el][org-columns-jb-extras.el]]
+ - Description :: Extra functions & macros for working with org-columns
+ - Author :: Joe Bloggs <vapniks@yahoo.com>
+ - Maintainer :: Joe Bloggs <vapniks@yahoo.com>
+Copyleft (Ↄ) 2024, Joe Bloggs, all rites reversed.
+ - Created :: 2024-05-24 00:22:47
+ - Version :: 0.1
+ - Last-Updated :: 2024-05-24 00:22:47
+ -           By :: Joe Bloggs
+ -     Update # :: 1
+ - URL :: https://github.com/vapniks/org-columns-jb-extras
+ - Keywords :: tools
+ - Compatibility :: GNU Emacs 25.2.2
+ - Package-Requires :: ((org "9.4.6"))
+
+* Possible Dependencies
+
+org 
+
+* Commentary
+
+Bitcoin donations gratefully accepted: 1ArFina3Mi8UDghjarGqATeBgXRDWrsmzo
+
+This library contains some extra functions for org-columns, and shadows some existing ones;
+`org-columns--compute-spec' & `org-columns-check-computed'.
+The new functions allow column views that treat values of leafs of org trees differently to
+values at branches when summarizing in a column view. 
+The functions `org-columns--summary-min-decision-tree' & `org-columns--summary-max-decision-tree'
+can be used to create decision trees that calculate probabilities.
+
+* Customizable options
+Below is a list of customizable options:
+
+ - `org-columns-leaf-types': Like `org-columns-summary-types' (which see), but for leaves of the tree only.
+* Installation
+
+Put org-columns-jb-extras.el in a directory in your load-path, e.g. ~/.emacs.d/
+You can add a directory to your load-path with the following line in ~/.emacs
+(add-to-list 'load-path (expand-file-name "~/elisp"))
+where ~/elisp is the directory you want to add 
+(you don't need to do this for ~/.emacs.d - it's added by default).
+
+Add the following to your ~/.emacs startup file.
+
+(require 'org-columns-jb-extras)
